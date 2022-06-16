@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/img/odin-lined.png" />
+    <title>The Odin Sing Up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- left-content -->
+      <div class="content-left">
+        <div class="odin_logo_bg">
+          <img class="odin_logo" src="/img/odin-lined.png" alt="odin logo" />
+          <h1 class="odin_text">ODIN</h1>
+        </div>
+        <p class="credit">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </div>
+
+      <!-- right-content -->
+      <div class="content-right">
+        <div class="info">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <span>now</span> to get started.
+          </p>
+          <p>You <span>know</span> you want to.</p>
+        </div>
+
+        <form class="form" action="#">
+          <div class="form_border">
+            <h2 class="form_title">Let's do this!</h2>
+            <div class="form_details_container">
+              <div class="form_group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" value="Darren" required />
+              </div>
+              <div class="form_group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" value="Corona|" required />
+              </div>
+              <div class="form_group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form_group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required />
+              </div>
+              <div class="form_group password">
+                <label for="password">Password</label>
+                <input type="password" id="password" required />
+              </div>
+              <div class="form_group">
+                <label for="con-pass">Confirm Password</label>
+                <input type="password" id="con-pass" required />
+              </div>
+            </div>
+          </div>
+
+          <button class="btn">Create Account</button>
+        </form>
+
+        <p class="log-in">Already have an account? <span>Log in</span></p>
+      </div>
+    </div>
+  </body>
+</html>

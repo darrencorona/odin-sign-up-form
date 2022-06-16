@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(/font/Norse-Bold.otf);
+}
+
+:root {
+  --clr-bg: #596d48;
+  --clr-input-border: #e5e7eb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.15;
+}
+
+/* ======================= 
+        CONTAINER 
+ ======================= */
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* ======================= 
+      CONTENT-LEFT 
+ ======================= */
+.content-left {
+  /* width: min(533px, 100%); */
+  width: 544px;
+  background-color: var(--clr-bg);
+  background-image: url(/img/fern-leaf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.odin_logo_bg {
+  background-color: rgba(0, 0, 0, 0.41);
+  margin-top: 228px;
+  padding: 12px 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.odin_logo {
+  width: 95px;
+}
+
+.odin_text {
+  color: #fff;
+  font-family: Norse-Bold;
+  font-size: 96px;
+  font-weight: 500;
+}
+
+.credit,
+.credit a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.credit a:hover {
+  color: rgb(168, 165, 165);
+}
+
+/* ======================= 
+      CONTENT-RIGHT 
+ ======================= */
+.content-right {
+  width: 65%;
+  background-color: #f9fafb;
+  /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+}
+
+/* Information */
+.info {
+  width: 680px;
+  margin: 170px 0 0 50px;
+}
+
+.info p {
+  font-size: 24px;
+}
+
+.info p span {
+  font-style: italic;
+}
+
+.info p:nth-of-type(1) {
+  margin-bottom: 27px;
+}
+
+/* Form */
+.form {
+  margin: 60px 0 0 0;
+}
+
+.form_border {
+  /* border: 1px solid blue; */
+  background-color: #fff;
+  padding: 20px 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.121);
+}
+
+.form_title {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.form_details_container {
+  /* border: 1px solid saddlebrown; */
+
+  margin-top: 22px;
+  width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form_group {
+  margin-bottom: 30px;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group label {
+  margin-bottom: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form_group input {
+  width: 100%;
+  height: 32px;
+  padding: 0 8px;
+  font-size: 15px;
+  border: 1px solid var(--clr-input-border);
+  border-radius: 5px;
+}
+
+#lname {
+  outline: 2px solid #007aff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.657);
+}
+
+input[type="password"] {
+  border-color: #ce6363;
+}
+
+.password::after {
+  content: "* Password do not match";
+  color: #ce6363;
+  font-size: 11px;
+}
+
+.btn {
+  margin: 35px 0 0 50px;
+  padding: 15px 55px;
+  font-size: 18px;
+  background-color: var(--clr-bg);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.log-in {
+  margin: 35px 0 0 50px;
+  font-size: 18px;
+}
+
+.log-in span {
+  color: var(--clr-bg);
+}
