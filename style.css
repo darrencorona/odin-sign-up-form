@@ -39,7 +39,7 @@ body {
   /* width: min(533px, 100%); */
   width: 544px;
   background-color: var(--clr-bg);
-  background-image: url(/img/fern-leaf.jpg);
+  background-image: url(./img/fern-leaf.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
